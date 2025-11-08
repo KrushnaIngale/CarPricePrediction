@@ -5,7 +5,7 @@ import streamlit as st
 import time
 
 
-model=pk.load(open('LinearRegressionModel.pkl','rb'))
+model=pk.load(open('CarPricePredictioon/LinearRegressionModel1.pkl','rb'))
 st.set_page_config(page_title="Car Price Prediction", page_icon="🚗", layout="centered")
 
 st.title("🚗 Car Price Prediction App")
@@ -56,3 +56,4 @@ if st.button('Predict Price'):
     
 
     st.markdown(f"## Predicted Car Price using Linear Regression: ₹ {np.round(car_price[0],2)} Lakhs")
+
