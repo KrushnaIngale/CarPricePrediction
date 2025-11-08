@@ -5,7 +5,7 @@ import streamlit as st
 import time
 
 
-model=pk.load(open('models/LinearRegressionModel1.pkl','rb'))
+model=pk.load(open('LinearRegressionModel1.pkl','rb'))
 st.set_page_config(page_title="Car Price Prediction", page_icon="🚗", layout="centered")
 
 st.title("🚗 Car Price Prediction App")
